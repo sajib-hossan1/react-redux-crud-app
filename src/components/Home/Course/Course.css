@@ -1,0 +1,40 @@
+.course-card {
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.img-box {
+  text-align: center;
+  position: relative;
+}
+
+.img-box img {
+  width: 300px;
+  height: 200px;
+}
+
+.price {
+  background: linear-gradient(to right, #ee7f5a, #eb4871);
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0px 20px;
+  margin-top: 0px;
+  border-radius: 0px 5px 5px 0px;
+  position: relative;
+  top: -20px;
+}
+
+.course-info {
+  margin-top: -20px;
+}
+
+.purchase-btn {
+  background: linear-gradient(to right, #eb4871, #ee7f5a);
+  color: white;
+  font-weight: 500;
+}

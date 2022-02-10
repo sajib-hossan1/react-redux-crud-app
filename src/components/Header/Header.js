@@ -19,8 +19,6 @@ const Header = () => {
 
     window.addEventListener('scroll', changeBg);
 
-    console.log(window.innerWidth);
-
     return (
         <div>
             <nav className={headerBg ? "navbar active navbar-expand-lg fixed-top navbar-dark" : "navbar navbar-expand-lg fixed-top navbar-dark" }>

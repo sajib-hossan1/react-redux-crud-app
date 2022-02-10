@@ -14,8 +14,9 @@ const Banner = () => {
                     </div>
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
                         <div className="info">
-                            <h1>Glossy Creative Agency</h1>
-                            <h2>Your Virtual Service Provider</h2>
+                            <h1>Glossy Creative IT</h1>
+                            <h2>Your Skill Developer</h2>
+                            <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minima laboriosam facere totam eum laudantium corporis, maxime repellendus odio facilis.</p>
                         </div>
                     </div>
                 </div>
