@@ -3,7 +3,7 @@
   transition: 0.3s ease-in-out;
 }
 .navbar.active {
-  background: #e12528e5 !important;
+  background: linear-gradient(to right, #ee7f5af6, #eb4871f3) !important;
   transition: 0.3s ease-in-out;
 }
 
@@ -21,6 +21,6 @@
 /* media queries */
 @media screen and (max-width: 991px) {
   .navbar {
-    background: #e12528 !important;
+    background: linear-gradient(to right, #ee7f5af6, #eb4871f3) !important;
   }
 }
