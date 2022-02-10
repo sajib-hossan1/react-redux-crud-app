@@ -1,0 +1,26 @@
+.navbar {
+  background: transparent !important;
+  transition: 0.3s ease-in-out;
+}
+.navbar.active {
+  background: #e12528e5 !important;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: white !important;
+}
+
+/* media queries */
+@media screen and (max-width: 991px) {
+  .navbar {
+    background: #e12528 !important;
+  }
+}

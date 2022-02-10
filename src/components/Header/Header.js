@@ -1,22 +1,43 @@
 import React from 'react';
+import { useState } from 'react';
+import './Header.css'
 
 const Header = () => {
+    const [headerBg, setHeaderBg] = useState(false);
+    
+    const changeBg = () => {
+        if(window.innerWidth < 992){
+            return;
+        }
+        if(window.scrollY > 50){
+            setHeaderBg(true)
+        }
+        else {
+            setHeaderBg(false)
+        }
+    };
+
+    window.addEventListener('scroll', changeBg);
+
+    console.log(window.innerWidth);
+
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className={headerBg ? "navbar active navbar-expand-lg fixed-top navbar-dark" : "navbar navbar-expand-lg fixed-top navbar-dark" }>
+
                 <div className="container">
+                    <a className="navbar-brand" href="#logo">GLOSSY IT</a>
+
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <a className="navbar-brand" href="#logo">Navbar</a>
-
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-link" href="#Home">Home</a>
-                        <a className="nav-link" href="#a">Features</a>
-                        <a className="nav-link" href="#b">Pricing</a>
-                    </div>
+                        <div className="navbar-nav nav-links ms-auto">
+                            <a className="nav-link" href="#h">Home</a>
+                            <a className="nav-link" href="#d">Features</a>
+                            <a className="nav-link" href="#f">Pricing</a>
+                        </div>
                     </div>
                 </div>
             </nav>

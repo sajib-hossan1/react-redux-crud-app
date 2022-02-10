@@ -1,0 +1,37 @@
+.banner-container {
+  background: url("../../../images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  padding: 70px 0;
+}
+
+.banner-img img {
+  width: 400px;
+}
+
+.info h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.info h2 {
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 26px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 991px) {
+  .banner-container {
+    padding-top: 100px;
+  }
+  .info h1 {
+    font-size: 40px;
+  }
+
+  .banner-img img {
+    width: 300px;
+  }
+}
