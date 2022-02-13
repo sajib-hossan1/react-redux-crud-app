@@ -16,7 +16,7 @@ const Banner = () => {
                         <div className="info">
                             <h1>Glossy Creative IT</h1>
                             <h2>Your Skill Developer</h2>
-                            <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minima laboriosam facere totam eum laudantium corporis, maxime repellendus odio facilis.</p>
+                            <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minima laboriosam facere totam eum laudantium corporis.</p>
                         </div>
                     </div>
                 </div>

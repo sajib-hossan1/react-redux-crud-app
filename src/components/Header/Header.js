@@ -1,5 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './Header.css'
 
 const Header = () => {
@@ -19,6 +22,9 @@ const Header = () => {
 
     window.addEventListener('scroll', changeBg);
 
+    const cart = useSelector(state => state.courses.cart)
+    console.log(cart);
+
     return (
         <div>
             <nav className={headerBg ? "navbar active navbar-expand-lg fixed-top navbar-dark" : "navbar navbar-expand-lg fixed-top navbar-dark" }>
@@ -32,9 +38,10 @@ const Header = () => {
 
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav nav-links ms-auto">
-                            <a className="nav-link" href="#h">Home</a>
-                            <a className="nav-link" href="#d">Features</a>
-                            <a className="nav-link" href="#f">Pricing</a>
+                            <HashLink className="nav-link" to="/home#home">Home</HashLink>
+                            <HashLink className="nav-link" to="/home#courses">Courses</HashLink>
+                            <HashLink className="nav-link" to="/home#contact">Contact</HashLink>
+                            <Link className="nav-link" to="/cart">Cart <sup>{cart.length}</sup></Link>
                         </div>
                     </div>
                 </div>

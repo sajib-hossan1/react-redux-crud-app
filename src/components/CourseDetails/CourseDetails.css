@@ -1,0 +1,19 @@
+.courseddetails-section {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.courseddetails-section img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.courseddetails-section span {
+  color: #ff2a5f;
+}
+
+.cart-btn {
+  background: linear-gradient(to right, #eb4871, #ee7f5a);
+  color: white;
+  font-weight: 500;
+}

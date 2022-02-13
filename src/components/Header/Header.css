@@ -1,5 +1,5 @@
 .navbar {
-  background: transparent !important;
+  background: linear-gradient(to right, #eb4871f3, #ee7f5af6) !important;
   transition: 0.3s ease-in-out;
 }
 .navbar.active {
@@ -8,14 +8,14 @@
 }
 
 .navbar-brand {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   font-size: 30px;
   font-weight: 500;
 }
 
 .nav-links a {
   font-size: 18px;
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 /* media queries */
