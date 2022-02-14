@@ -89,11 +89,14 @@ const courseSlice = createSlice({
         addToCart : (state, action) => {
             const course = action.payload;
             state.cart = [ ...state.cart, course];
+        },
+        deletItemFromCart : (state, action) => {
+            state.cart = state.cart.filter(item => item.id !== action.payload)
         }
         
     }
 })
 
-export const { getCourse, clearCourse , addToCart} = courseSlice.actions;
+export const { getCourse, clearCourse , addToCart, deletItemFromCart} = courseSlice.actions;
 
 export default courseSlice.reducer;

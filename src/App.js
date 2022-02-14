@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Cart from './components/Cart/Cart';
 import CourseDetails from './components/CourseDetails/CourseDetails';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" element={<Home></Home>}></Route>
           <Route exact path="/home" element={<Home></Home>}></Route>
           <Route exact path="/courseDetails/:id" element={<CourseDetails></CourseDetails>}></Route>
+          <Route path='/cart' element={<Cart></Cart>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

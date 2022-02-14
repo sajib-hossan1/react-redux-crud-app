@@ -23,7 +23,6 @@ const Header = () => {
     window.addEventListener('scroll', changeBg);
 
     const cart = useSelector(state => state.courses.cart)
-    console.log(cart);
 
     return (
         <div>
