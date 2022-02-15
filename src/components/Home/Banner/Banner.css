@@ -1,9 +1,9 @@
 .banner-container {
-  background: url("../../../images/banner-bg.png");
+  background: linear-gradient(to right, #eb4871f3, #ee7f5af6) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 95vh;
+  height: 100vh;
   padding: 70px 0;
 }
 
